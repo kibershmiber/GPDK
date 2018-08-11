@@ -1,4 +1,4 @@
-![eRepublic](https://ibb.co/bE5hAp)
+![eRepublic](https://image.ibb.co/cWELwU/logo.jpg)
   
 Bootstrap 4  
 Fully Responsive Layout  
