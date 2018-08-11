@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Twitter вигляд акаунту має бути: @акаунт -->
+    <meta name="twitter:site" content="@акаунт">
+    <meta name="twitter:creator" content="@акаунт">
+    <meta name="twitter:card" content="велика картинка">
+    <meta name="twitter:title" content="GPDK">
+    <meta name="twitter:description" content="Описова частина">
+    <meta name="twitter:image" content="#">
+
+    <!-- Facebook -->
+    <meta property="og:url" content="https://github.com/e-republic/GPDK">
+    <meta property="og:title" content="GPDK">
+    <meta property="og:description" content="Описова частина">
+    <meta property="og:image" content="#">
+    <meta property="og:image:secure_url" content="#">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="600">
+
+    <!-- Meta -->
+    <meta name="description" content="Описова частина вашого проекту">
+    <meta name="author" content="Ваша організація">
+
+    <title>Головна. Governmental Portal Design Kit</title>
+
+    <!-- CSS-->
+    <link href="../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="../lib/Ionicons/css/ionicons.css" rel="stylesheet">
+    <link href="../lib/rickshaw/css/rickshaw.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../css/main.css">
+
+  </head>
+  <body>
+  <div class="gpdk-header">
+    <div class="container container_wrap">
+      <div class="gpdk-header-left">
+
+        <a class="main-logo main-logo-light" href="#">
+          <div class="icon-flag">
+            <div class="yellow"></div>
+            <div class="blue"></div>
+          </div>
+          <div class="wrap-text">
+            <span class="one">gov.ua</span>
+            <span class="light">Державні сайти України</span>
+          </div>
+        </a>
+      </div>
+      <div class="gpdk-header-left dis-flex">
+
+
+        <div class="trezub">
+          <a href="/" title="Головна сторінка"> <img src="../img/trezub.png" alt="Головна сторінка"></a>
+        </div>
+
+        <div class="wrap-text">
+          <a href="/" title="Головна сторінка">   <span class="big-fat">Електронний кабінет державного органу</span></a>
+        </div>
+
+      </div>
+      <!-- gpdk-header-left -->
+      <div class="gpdk-header-right">
+        <div class="change">
+
+          <img class="icon_change" src="../img/icn-accessability.svg" alt="">
+          <span>Людям із  порушенням зору</span>
+        </div>
+
+        <!-- IntroJS -->
+        <div style="width: 40px; height: 40px;"><a href="#" class="header-notification intro-begin" onclick="introJs().start();">
+          <i class="icon ion-help"></i>
+        </a></div>
+
+        <div class="dropdown dropdown-c">
+          <a href="#" class="logged-user" data-toggle="dropdown">
+
+            <span> Тестовий Т.К. </span>
+            <i class="fa fa-angle-down"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <nav class="nav">
+              <a href="#" class="nav-link"><i class="icon ion-forward"></i> Мій профіль</a>
+              <a href="#" class="nav-link"><i class="icon ion-forward"></i> Вийти з акаунту</a>
+            </nav>
+          </div><!-- dropdown-menu -->
+        </div><!-- dropdown -->
+      </div><!-- header-right -->
+
+      <div class="modal-gov" id="modal-gov">
+        <div class="close"></div>
+        <div class="wrap">
+          <ul class="wrap-link">
+            <li>
+              <a href="#" target="_blank">Президент України</a>
+            </li>
+            <li>
+              <a href="#" target="_blank">Верховна Рада України</a>
+            </li>
+          </ul>
+          <ul class="wrap-link">
+            <li>
+              <a href="#" target="_blank">Конституційний суд України</a>
+            </li>
+            <li>
+              <a href="#" target="_blank">Рада національноїа безпеки і оборони України</a>
+            </li>
+          </ul>
+          <ul class="wrap-link" target="_blank">
+            <li>
+              <a href="#">Центральні та місцеві органи виконавчої влади</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-background"></div>
+    </div><!-- container -->
+  </div><!-- gpdk-header -->
+
+
+    <div class="gpdk-navbar">
+      <div class="container">
+        <ul class="nav">
+          <li class="nav-item with-sub active">
+            <a class="nav-link" href="#">
+              <i class="icon ion-ios-home-outline"></i>
+              <span>Головна</span>
+            </a>
+            <div class="sub-item">
+              <ul>
+                <li><a href="#">Вигляд сайту</a></li>
+                <li><a href="#">Вигляд кабінет/адмінки</a></li>
+
+              </ul>
+            </div><!-- sub-item -->
+          </li>
+          <li class="nav-item with-sub ">
+            <a class="nav-link" href="#">
+              <i class="icon ion-ios-home-outline"></i>
+              <span>Елементи</span>
+            </a>
+            <div class="sub-item">
+              <ul>
+                <li><a href="#">Набір №01</a></li>
+
+
+              </ul>
+            </div><!-- sub-item -->
+          <li class="nav-item with-sub">
+            <a class="nav-link" href="#">
+              <i class="icon ion-ios-book-outline"></i>
+              <span>Сторінки</span>
+            </a>
+            <div class="sub-item">
+              <ul>
+                <li><a href="#">Профіль</a></li>
+
+
+              </ul>
+            </div><!-- dropdown-menu -->
+          </li>
+          <li class="nav-item with-sub">
+            <a class="nav-link" href="#" data-toggle="dropdown">
+              <i class="icon ion-ios-gear-outline"></i>
+              <span>Форми</span>
+            </a>
+            <div class="sub-item">
+              <ul>
+                <li><a href="#">Елементи форм</a></li>
+
+              </ul>
+            </div><!-- dropdown-menu -->
+          </li>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="widgets.html">
+              <i class="icon ion-ios-analytics-outline"></i>
+              <span>Віджети</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page-messages.html">
+              <i class="icon ion-ios-chatboxes-outline"></i>
+              <span>Різне</span>
+
+            </a>
+        </ul>
+      </div><!-- container -->
+    </div><!-- gpdk-navbar -->
+
+    <div class="gpdk-mainpanel">
+      <div class="container">
+
+
+      </div><!-- container -->
+    </div><!-- gpdk-mainpanel -->
+
+  <footer>
+    <div class="container mt-footer">
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="description">
+            <div class="item">
+              <div class="icon"></div>
+              <span class="first">
+
+                          Власність #######. Проект реалізовано
+                            <a href="#" target="_blank">
+                               Фондом "Східна Європа"
+                            </a>
+                            та
+                            <a href="#" target="_blank">
+                                Державним агентством з питань електронного урядування України
+                            </a>
+                            у межах програми міжнародної
+                            технічної допомоги
+                            <a href="#" target="_blank">
+                                 "Електронне врядування задля підзвітності влади та участі громади"
+                            </a> (EGAP) ,
+                            за фінансової підтримки
+                            <a href="#" target="_blank">
+                                 Швейцарської агенції розвитку та співробітництва
+                            </a>
+                        </span>
+            </div>
+            <div class="item">
+              <div class="icon"></div>
+              <span>
+                         Портал працює в тестовому режимі.
+                         Якщо ви маєте зауваження або пропозиції, будь ласка, напишіть нам:
+                        <a href="#">support@hsc.gov.ua</a>
+                    </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <ul class="menu_footer">
+            <li><a href="">1. Меню </a></li>
+            <li><a href="">2. Меню </a></li>
+            <li><a href="">3. Меню </a></li>
+            <li><a href="">4. Меню </a></li>
+            <li><a href="">5. Меню </a></li>
+            <li><a href="">6. Меню </a></li>
+          </ul>
+          <div class="links second">
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="col-md-4 right_footer_block">
+          <div class="social-links">
+            <ul>
+              <li>
+                <a href="#" target="_blank">
+                  <i class="fa fa-2x fa-facebook-square"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <i class="fa fa-2x fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <i class="fa fa-2x fa-youtube-play"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="change_footer">
+            <img class="icon_change" src="{% static '/img/icn-accessability-f.png' %}" alt="">
+            <span><a href="">Людям із порушенням зору</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="developer">
+            <div class="license">
+              <div class="icon"></div>
+              <span>
+                         Весь контент доступний за ліцензією
+                        <a target="_blank" href="#">Creative Commons Attribution 4.0 International license</a>, якщо не зазначено інше
+                    </span>
+            </div>
+
+            <div class="clearfix"></div>
+          </div>
+
+        </div>
+      </div>
+
+    <script src="../lib/jquery/js/jquery.js"></script>
+    <script src="../lib/popper.js/js/popper.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../lib/jquery.cookie/js/jquery.cookie.js"></script>
+    <script src="../lib/rickshaw/js/rickshaw.min.js"></script>
+    <script src="../lib/jquery.sparkline.bower/js/jquery.sparkline.min.js"></script>
+    <script src="../js/ResizeSensor.js"></script>
+    <script src="../js/main.js"></script>
+
+  <script type="application/javascript">
+
+      $(document).ready(function() {
+
+          var logo = $('.main-logo');
+          var modalBackground = $('.modal-background');
+          var modalGov = $('#modal-gov');
+          var close = $('#modal-gov .close');
+
+          $(logo).on('click', function(event) {
+              event.preventDefault();
+              $(modalBackground).fadeIn(200, function() {
+                  $(modalGov).fadeIn(200);
+              });
+          });
+
+          $(modalBackground).on('click', function() {
+              $(modalGov).fadeOut('400');
+              $(modalBackground).fadeOut('400');
+          });
+
+          $(close).on('click', function() {
+              $(modalGov).fadeOut('400');
+              $(modalBackground).fadeOut('400');
+          });
+
+      });
+  </script>
+  </body>
+</html>
