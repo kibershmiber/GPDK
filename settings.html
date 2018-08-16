@@ -1,0 +1,134 @@
+<div class="template-options-wrapper">
+  <a href="" class="template-options-btn">
+    <i class="icon ion-ios-gear"></i>
+  </a>
+
+  <div class="template-options-inner">
+    <h1 class="template-option-logo">slim.</h1>
+
+    <h6 class="template-options-title">Template Settings</h6>
+
+    <div class="option-row-wrapper">
+      <label class="slim-options-label">Skin Mode:</label>
+      <div>
+        <div class="skin-mode-item">
+          <a href="" class="skin-light-mode"></a>
+        </div>
+        <div class="skin-mode-item">
+          <a href="" class="skin-dark-mode"></a>
+        </div><!-- skin-mode-item -->
+      </div>
+    </div><!-- option-row-wrapper -->
+    <div class="option-row-wrapper">
+      <label class="slim-options-label">Direction:</label>
+      <div>
+        <label class="rdiobox">
+          <input name="slim-direction" class="slim-direction" type="radio" value="ltr">
+          <span>LTR</span>
+        </label>
+        <label class="rdiobox">
+          <input name="slim-direction" class="slim-direction" type="radio" value="rtl">
+          <span>RTL</span>
+        </label>
+      </div>
+    </div><!-- option-row-wrapper -->
+    <div class="option-row-wrapper">
+      <label class="slim-options-label">Sticky Header:</label>
+      <div>
+        <label class="rdiobox">
+          <input name="sticky-header" class="sticky-header" type="radio" value="yes">
+          <span>Yes</span>
+        </label>
+        <label class="rdiobox">
+          <input name="sticky-header" class="sticky-header" type="radio" value="no">
+          <span>No</span>
+        </label>
+      </div>
+    </div><!-- option-row-wrapper -->
+    <div class="option-row-wrapper">
+      <label class="slim-options-label">Page Wide:</label>
+      <div>
+        <label class="rdiobox">
+          <input name="full-width" class="full-width" type="radio" value="yes">
+          <span>Yes</span>
+        </label>
+        <label class="rdiobox">
+          <input name="full-width" class="full-width" type="radio" value="no">
+          <span>No</span>
+        </label>
+      </div>
+    </div><!-- option-row-wrapper -->
+    <div class="option-row-wrapper d-block">
+      <label class="slim-options-label">Navigation Layout:</label>
+      <div class="mg-t-10">
+        <label class="rdiobox m-0">
+          <input name="nav-layout" class="nav-layout" type="radio" value="horizontal">
+          <span>Navbar</span>
+        </label>
+        <label class="rdiobox">
+          <input name="nav-layout" class="nav-layout" type="radio" value="vertical">
+          <span>Sidebar</span>
+        </label>
+      </div>
+    </div><!-- option-row-wrapper -->
+    <div class="option-row-wrapper">
+      <label class="slim-options-label">Sticky Sidebar:</label>
+      <div>
+        <label class="rdiobox">
+          <input name="sticky-sidebar" class="sticky-sidebar" type="radio" value="yes">
+          <span>Yes</span>
+        </label>
+        <label class="rdiobox">
+          <input name="sticky-sidebar" class="sticky-sidebar" type="radio" value="no">
+          <span>No</span>
+        </label>
+      </div>
+    </div><!-- option-row-wrapper -->
+
+    <h6 class="template-options-title mg-t-50">Header Skin Variant</h6>
+    <div class="header-skin-group pd-b-40">
+      <div class="header-skin-item header-skin-default">
+        <label class="rdiobox">
+          <input name="header-skin" class="header-skin" type="radio" value="default">
+          <span></span>
+        </label>
+        <div class="header-skin-body">
+          <div class="row no-gutters">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+          </div><!-- row -->
+        </div><!-- header-skin-body -->
+      </div><!-- header-skin-item -->
+      <div class="header-skin-item header-skin-one">
+        <label class="rdiobox">
+          <input name="header-skin" class="header-skin" type="radio" value="header-one">
+          <span></span>
+        </label>
+        <div class="header-skin-body">
+          <div class="row no-gutters">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+          </div><!-- row -->
+        </div><!-- header-skin-body -->
+      </div><!-- header-skin-item -->
+      <div class="header-skin-item header-skin-two">
+        <label class="rdiobox">
+          <input name="header-skin" class="header-skin" type="radio" value="header-two">
+          <span></span>
+        </label>
+        <div class="header-skin-body">
+          <div class="row no-gutters">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+          </div><!-- row -->
+        </div><!-- header-skin-body -->
+      </div><!-- header-skin-item -->
+    </div><!-- header-skin-group -->
+  </div><!-- template-options-inner -->
+</div><!-- template-options-wrapper -->
