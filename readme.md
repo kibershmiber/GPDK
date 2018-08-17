@@ -11,6 +11,6 @@
 ![eRepublic](https://image.ibb.co/eJMHT9/firs_page_monitor.jpg)  
   
     
-    Частково використані едементи Bootstrap 4 та AdminLTE3
+    Частково використані елементи Bootstrap 4 та AdminLTE 3
 
   
