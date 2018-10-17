@@ -35,6 +35,8 @@
 
 
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/form_element.css">
+    <link rel="stylesheet" href="../css/introjs.css">
 
   </head>
   <body>
@@ -74,8 +76,8 @@
         </div>
 
         <!-- IntroJS -->
-        <div style="width: 40px; height: 40px;"><a href="#" class="header-notification intro-begin" onclick="introJs().start();">
-          <i class="icon ion-help"></i>
+        <div style="width: 40px; height: 40px;"><a href="#" class="header-notification intro-begin" onclick="intro()">
+          <i class="fa fa-question"></i>
         </a></div>
 
         <div class="dropdown dropdown-c">
@@ -127,7 +129,7 @@
     <div class="gpdk-navbar">
       <div class="container">
         <ul class="nav">
-          <li class="nav-item with-sub active">
+          <li class="nav-item with-sub active" data-intro="Головна сторінка">
             <a class="nav-link" href="#">
               <i class="icon ion-ios-home-outline"></i>
               <span>Головна</span>
@@ -140,7 +142,7 @@
               </ul>
             </div><!-- sub-item -->
           </li>
-          <li class="nav-item with-sub ">
+          <li class="nav-item with-sub " data-intro="Елементи">
             <a class="nav-link" href="#">
               <i class="icon ion-ios-home-outline"></i>
               <span>Елементи</span>
@@ -152,7 +154,7 @@
 
               </ul>
             </div><!-- sub-item -->
-          <li class="nav-item with-sub">
+          <li class="nav-item with-sub" data-intro="Профіль">
             <a class="nav-link" href="#">
               <i class="icon ion-ios-book-outline"></i>
               <span>Сторінки</span>
@@ -165,7 +167,7 @@
               </ul>
             </div><!-- dropdown-menu -->
           </li>
-          <li class="nav-item with-sub">
+          <li class="nav-item with-sub" data-intro="Форми">
             <a class="nav-link" href="#" data-toggle="dropdown">
               <i class="icon ion-ios-gear-outline"></i>
               <span>Форми</span>
@@ -179,13 +181,13 @@
           </li>
 
           </li>
-          <li class="nav-item">
+          <li class="nav-item" data-intro="Віджети">
             <a class="nav-link" href="widgets.html">
               <i class="icon ion-ios-analytics-outline"></i>
               <span>Віджети</span>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" data-intro="Різне">
             <a class="nav-link" href="page-messages.html">
               <i class="icon ion-ios-chatboxes-outline"></i>
               <span>Різне</span>
@@ -196,7 +198,7 @@
     </div><!-- gpdk-navbar -->
 
     <div class="gpdk-mainpanel">
-      <div class="container">
+      <div class="container" >
 
 
       </div><!-- container -->
@@ -307,6 +309,13 @@
     <script src="../js/ResizeSensor.js"></script>
     <script src="../js/main.js"></script>
 
+    <!-- IntroJS -->
+    <script>
+      function intro() {
+              introJs().start();
+          }
+    </script>
+    <script src="../js/intro.js"></script>
   <script type="application/javascript">
 
       $(document).ready(function() {
