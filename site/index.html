@@ -198,11 +198,966 @@
     </div><!-- gpdk-navbar -->
 
     <div class="gpdk-mainpanel">
-      <div class="container" >
+      <div class="container">
+        <div class="gpdk-pageheader">
+          <ol class="breadcrumb gpdk-breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Головна</a></li>
+            <li class="breadcrumb-item"><a href="#">Форми</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Елементи форми</li>
+          </ol>
+          <h6 class="gpdk-pagetitle">Елементи форми</h6>
+        </div><!-- gpdk-pageheader -->
+
+        <div class="section-wrapper">
+          <label class="section-title">Basic Form Input</label>
+          <p class="mg-b-20 mg-sm-b-40">A basic form control with disabled and readonly mode.</p>
+
+          <div class="row">
+            <div class="col-lg">
+              <input class="form-control" placeholder="Input box" type="text">
+            </div><!-- col -->
+            <div class="col-lg mg-t-10 mg-lg-t-0">
+              <input class="form-control" placeholder="Input box (readonly)" readonly="" type="text">
+            </div><!-- col -->
+            <div class="col-lg mg-t-10 mg-lg-t-0">
+              <input class="form-control" placeholder="Input box (disabled)" disabled="" type="text">
+            </div><!-- col -->
+          </div><!-- row -->
+
+          <div class="row mg-t-20">
+            <div class="col-lg">
+              <textarea rows="3" class="form-control" placeholder="Textarea"></textarea>
+            </div><!-- col -->
+            <div class="col-lg mg-t-10 mg-lg-t-0">
+              <textarea rows="3" class="form-control" placeholder="Textarea (readonly)" readonly=""></textarea>
+            </div><!-- col -->
+            <div class="col-lg mg-t-10 mg-lg-t-0">
+              <textarea rows="3" class="form-control" placeholder="Texarea (disabled)" disabled=""></textarea>
+            </div><!-- col -->
+          </div><!-- row -->
+        </div><!-- section-wrapper -->
+
+        <div class="section-wrapper mg-t-20">
+          <label class="section-title">Valid State Input</label>
+          <p class="mg-b-20 mg-sm-b-40">A form control with success, warning and error state.</p>
+
+          <div class="row">
+            <div class="col-lg">
+              <div class="form-group has-success mg-b-0">
+                <input class="form-control is-valid" placeholder="Input box (success state)" type="text">
+                <textarea rows="3" class="form-control is-valid mg-t-20" placeholder="Textarea (success state)"></textarea>
+              </div><!-- form-group -->
+            </div><!-- col -->
+            <div class="col-lg mg-t-20 mg-lg-t-0">
+              <div class="form-group has-warning mg-b-0">
+                <input class="form-control is-warning" placeholder="Input box (warning state)" type="text">
+                <textarea rows="3" class="form-control is-warning mg-t-20" placeholder="Textarea (warning state)"></textarea>
+              </div><!-- form-group -->
+            </div><!-- col -->
+            <div class="col-lg mg-t-20 mg-lg-t-0">
+              <div class="form-group has-danger mg-b-0">
+                <input class="form-control is-invalid" placeholder="Input box (danger state)" type="text">
+                <textarea rows="3" class="form-control is-invalid mg-t-20" placeholder="Textarea (danger state)"></textarea>
+              </div><!-- form-group -->
+            </div><!-- col -->
+          </div><!-- row -->
+        </div><!-- section-wrapper -->
+
+        <div class="section-wrapper mg-t-20">
+          <label class="section-title">Custom Checkboxes &amp; Radios</label>
+          <p class="mg-b-20 mg-sm-b-40">A custom styled checkboxes and radios.</p>
+
+          <div class="row">
+            <div class="col-lg-3">
+              <label class="ckbox">
+                <input type="checkbox"><span>Checkbox Unchecked</span>
+              </label>
+            </div><!-- col-3 -->
+            <div class="col-lg-3 mg-t-20 mg-lg-t-0">
+              <label class="ckbox">
+                <input type="checkbox" checked=""><span>Checkbox Checked</span>
+              </label>
+            </div><!-- col-3 -->
+            <div class="col-lg-3 mg-t-20 mg-lg-t-0">
+              <label class="ckbox">
+                <input type="checkbox" disabled=""><span>Checkbox Disabled</span>
+              </label>
+            </div><!-- col-3 -->
+          </div><!-- row -->
+
+          <div class="row mg-t-10">
+            <div class="col-lg-3">
+              <label class="rdiobox">
+                <input name="rdio" type="radio">
+                <span>Radio Unchecked</span>
+              </label>
+            </div><!-- col-3 -->
+            <div class="col-lg-3 mg-t-20 mg-lg-t-0">
+              <label class="rdiobox">
+                <input name="rdio" type="radio" checked="">
+                <span>Radio Checked</span>
+              </label>
+            </div><!-- col-3 -->
+            <div class="col-lg-3 mg-t-20 mg-lg-t-0">
+              <label class="rdiobox">
+                <input name="rdio" type="radio" disabled="">
+                <span>Radio Disabled</span>
+              </label>
+            </div><!-- col-3 -->
+          </div><!-- row -->
+        </div><!-- section-wrapper -->
+
+        <div class="section-wrapper mg-t-20">
+          <label class="section-title">Active State Color Variant</label>
+          <p class="mg-b-20 mg-sm-b-40">A custom styled checkboxes and radios with colored active state.</p>
+
+          <div class="row">
+            <div class="col-lg-3">
+              <label class="ckbox">
+                <input type="checkbox" checked=""><span>Checkbox Primary (default)</span>
+              </label>
+
+              <label class="ckbox ckbox-success mg-t-15">
+                <input type="checkbox" checked=""><span>Checkbox Success</span>
+              </label>
+
+              <label class="ckbox ckbox-pink mg-t-15">
+                <input type="checkbox" checked=""><span>Checkbox Indigo</span>
+              </label>
+            </div><!-- col-3 -->
+            <div class="col-lg-3">
+              <label class="rdiobox">
+                <input type="radio" checked=""><span>Radio Primary (default)</span>
+              </label>
+
+              <label class="rdiobox rdiobox-success mg-t-15">
+                <input type="radio" checked=""><span>Radio Success</span>
+              </label>
+
+              <label class="rdiobox rdiobox-pink mg-t-15">
+                <input type="radio" checked=""><span>Radio Indigo</span>
+              </label>
+            </div><!-- col-3 -->
+          </div><!-- row -->
+        </div><!-- section-wrapper -->
+
+        <div class="section-wrapper mg-t-20">
+                  <label class="section-title">File Browser</label>
+                  <p class="mg-b-20 mg-sm-b-40">A custom styled file browser.</p>
+
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="customFile">
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                      </div><!-- custom-file -->
+                    </div><!-- col -->
+                    <div class="col-lg-3 mg-t-40 mg-lg-t-0">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="customFile2">
+                        <label class="custom-file-label custom-file-label-primary" for="customFile">Choose file</label>
+                      </div><!-- custom-file -->
+                    </div><!-- col -->
+                    <div class="col-lg-3 mg-t-40 mg-lg-t-0">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="customFile3">
+                        <label class="custom-file-label custom-file-label-inverse" for="customFile">Choose file</label>
+                      </div><!-- custom-file -->
+                    </div><!-- col -->
+                  </div><!-- row -->
+                </div> <!-- section-wrapper -->
+
+                <div class="section-wrapper mg-t-20">
+                          <label class="section-title">Toggle Switches</label>
+                          <p class="mg-b-20 mg-sm-b-40">A lightweight jQuery plugin that creates easily-styleable toggle buttons.</p>
+
+                          <div class="toggle-wrapper">
+                            <div class="toggle toggle-light" style="height: 26px; width: 60px;"><div class="toggle-slide"><div class="toggle-inner" style="width: 94px; margin-left: 0px;"><div class="toggle-on active" style="height: 26px; width: 47px; text-indent: -8.66667px; line-height: 26px;">ON</div><div class="toggle-blob" style="height: 26px; width: 26px; margin-left: -13px;"></div><div class="toggle-off" style="height: 26px; width: 47px; margin-left: -13px; text-indent: 8.66667px; line-height: 26px;">OFF</div></div></div></div>
+                          </div>
+                          <div class="toggle-wrapper">
+                            <div class="toggle toggle-light primary" style="height: 26px; width: 60px;"><div class="toggle-slide"><div class="toggle-inner" style="width: 94px; margin-left: 0px;"><div class="toggle-on active" style="height: 26px; width: 47px; text-indent: -8.66667px; line-height: 26px;">ON</div><div class="toggle-blob" style="height: 26px; width: 26px; margin-left: -13px;"></div><div class="toggle-off" style="height: 26px; width: 47px; margin-left: -13px; text-indent: 8.66667px; line-height: 26px;">OFF</div></div></div></div>
+                          </div>
+                          <div class="toggle-wrapper">
+                            <div class="toggle toggle-light success" style="height: 26px; width: 60px;"><div class="toggle-slide"><div class="toggle-inner" style="width: 94px; margin-left: 0px;"><div class="toggle-on active" style="height: 26px; width: 47px; text-indent: -8.66667px; line-height: 26px;">ON</div><div class="toggle-blob" style="height: 26px; width: 26px; margin-left: -13px;"></div><div class="toggle-off" style="height: 26px; width: 47px; margin-left: -13px; text-indent: 8.66667px; line-height: 26px;">OFF</div></div></div></div>
+                          </div>
+                          <div class="toggle-wrapper">
+                            <div class="toggle toggle-light warning" style="height: 26px; width: 60px;"><div class="toggle-slide"><div class="toggle-inner" style="width: 94px; margin-left: 0px;"><div class="toggle-on active" style="height: 26px; width: 47px; text-indent: -8.66667px; line-height: 26px;">ON</div><div class="toggle-blob" style="height: 26px; width: 26px; margin-left: -13px;"></div><div class="toggle-off" style="height: 26px; width: 47px; margin-left: -13px; text-indent: 8.66667px; line-height: 26px;">OFF</div></div></div></div>
+                          </div>
+                          <div class="toggle-wrapper">
+                            <div class="toggle toggle-light danger" style="height: 26px; width: 60px;"><div class="toggle-slide"><div class="toggle-inner" style="width: 94px; margin-left: 0px;"><div class="toggle-on active" style="height: 26px; width: 47px; text-indent: -8.66667px; line-height: 26px;">ON</div><div class="toggle-blob" style="height: 26px; width: 26px; margin-left: -13px;"></div><div class="toggle-off" style="height: 26px; width: 47px; margin-left: -13px; text-indent: 8.66667px; line-height: 26px;">OFF</div></div></div></div>
+                          </div>
+                          <div class="toggle-wrapper">
+                            <div class="toggle toggle-light info" style="height: 26px; width: 60px;"><div class="toggle-slide"><div class="toggle-inner" style="width: 94px; margin-left: 0px;"><div class="toggle-on active" style="height: 26px; width: 47px; text-indent: -8.66667px; line-height: 26px;">ON</div><div class="toggle-blob" style="height: 26px; width: 26px; margin-left: -13px;"></div><div class="toggle-off" style="height: 26px; width: 47px; margin-left: -13px; text-indent: 8.66667px; line-height: 26px;">OFF</div></div></div></div>
+                          </div>
+
+                          <div class="toggle-wrapper">
+                            <div class="toggle toggle-light indigo" style="height: 26px; width: 60px;"><div class="toggle-slide"><div class="toggle-inner" style="width: 94px; margin-left: 0px;"><div class="toggle-on active" style="height: 26px; width: 47px; text-indent: -8.66667px; line-height: 26px;">ON</div><div class="toggle-blob" style="height: 26px; width: 26px; margin-left: -13px;"></div><div class="toggle-off" style="height: 26px; width: 47px; margin-left: -13px; text-indent: 8.66667px; line-height: 26px;">OFF</div></div></div></div>
+                          </div>
+
+                          <div class="mg-t-20"></div>
+
+                          <div class="toggle-wrapper">
+                            <div class="toggle toggle-modern" style="height: 26px; width: 60px;"><div class="toggle-slide"><div class="toggle-inner" style="width: 94px; margin-left: 0px;"><div class="toggle-on active" style="height: 26px; width: 47px; text-indent: -8.66667px; line-height: 26px;">ON</div><div class="toggle-blob" style="height: 26px; width: 26px; margin-left: -13px;"></div><div class="toggle-off" style="height: 26px; width: 47px; margin-left: -13px; text-indent: 8.66667px; line-height: 26px;">OFF</div></div></div></div>
+                          </div>
+
+                          <div class="toggle-wrapper">
+                            <div class="toggle toggle-modern primary" style="height: 26px; width: 60px;"><div class="toggle-slide"><div class="toggle-inner" style="width: 94px; margin-left: 0px;"><div class="toggle-on active" style="height: 26px; width: 47px; text-indent: -8.66667px; line-height: 26px;">ON</div><div class="toggle-blob" style="height: 26px; width: 26px; margin-left: -13px;"></div><div class="toggle-off" style="height: 26px; width: 47px; margin-left: -13px; text-indent: 8.66667px; line-height: 26px;">OFF</div></div></div></div>
+                          </div>
+
+                          <div class="toggle-wrapper">
+                            <div class="toggle toggle-modern success" style="height: 26px; width: 60px;"><div class="toggle-slide"><div class="toggle-inner" style="width: 94px; margin-left: 0px;"><div class="toggle-on active" style="height: 26px; width: 47px; text-indent: -8.66667px; line-height: 26px;">ON</div><div class="toggle-blob" style="height: 26px; width: 26px; margin-left: -13px;"></div><div class="toggle-off" style="height: 26px; width: 47px; margin-left: -13px; text-indent: 8.66667px; line-height: 26px;">OFF</div></div></div></div>
+                          </div>
+
+                          <div class="toggle-wrapper">
+                            <div class="toggle toggle-modern warning" style="height: 26px; width: 60px;"><div class="toggle-slide"><div class="toggle-inner" style="width: 94px; margin-left: 0px;"><div class="toggle-on active" style="height: 26px; width: 47px; text-indent: -8.66667px; line-height: 26px;">ON</div><div class="toggle-blob" style="height: 26px; width: 26px; margin-left: -13px;"></div><div class="toggle-off" style="height: 26px; width: 47px; margin-left: -13px; text-indent: 8.66667px; line-height: 26px;">OFF</div></div></div></div>
+                          </div>
+
+                          <div class="toggle-wrapper">
+                            <div class="toggle toggle-modern danger" style="height: 26px; width: 60px;"><div class="toggle-slide"><div class="toggle-inner" style="width: 94px; margin-left: 0px;"><div class="toggle-on active" style="height: 26px; width: 47px; text-indent: -8.66667px; line-height: 26px;">ON</div><div class="toggle-blob" style="height: 26px; width: 26px; margin-left: -13px;"></div><div class="toggle-off" style="height: 26px; width: 47px; margin-left: -13px; text-indent: 8.66667px; line-height: 26px;">OFF</div></div></div></div>
+                          </div>
+
+                          <div class="toggle-wrapper">
+                            <div class="toggle toggle-modern info" style="height: 26px; width: 60px;"><div class="toggle-slide"><div class="toggle-inner" style="width: 94px; margin-left: 0px;"><div class="toggle-on active" style="height: 26px; width: 47px; text-indent: -8.66667px; line-height: 26px;">ON</div><div class="toggle-blob" style="height: 26px; width: 26px; margin-left: -13px;"></div><div class="toggle-off" style="height: 26px; width: 47px; margin-left: -13px; text-indent: 8.66667px; line-height: 26px;">OFF</div></div></div></div>
+                          </div>
+
+                          <div class="toggle-wrapper">
+                            <div class="toggle toggle-modern indigo" style="height: 26px; width: 60px;"><div class="toggle-slide"><div class="toggle-inner" style="width: 94px; margin-left: 0px;"><div class="toggle-on active" style="height: 26px; width: 47px; text-indent: -8.66667px; line-height: 26px;">ON</div><div class="toggle-blob" style="height: 26px; width: 26px; margin-left: -13px;"></div><div class="toggle-off" style="height: 26px; width: 47px; margin-left: -13px; text-indent: 8.66667px; line-height: 26px;">OFF</div></div></div></div>
+                          </div>  <!-- section-wrapper -->
+
+                          <p class="section-label mg-t-40">Class Reference</p>
+                          <table class="table table-reference">
+                            <thead>
+                              <tr>
+                                <th class="wd-40p">Class</th>
+                                <th class="wd-60p">Values</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><code class="pd-0 bg-transparent">class="toggle toggle-light [value]"</code></td>
+                                <td rowspan="2">primary | success | warning | danger | info | teal | indigo | purple | pink | orange</td>
+                              </tr>
+                              <tr>
+                                <td><code class="pd-0 bg-transparent">class="toggle toggle-modern [value]"</code></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
 
 
-      </div><!-- container -->
+        <div class="section-wrapper mg-t-20">
+          <label class="section-title">Input Groups</label>
+          <p class="mg-b-20 mg-sm-b-40">Easily extend form controls by adding text, buttons, or button groups on either side of textual inputs.</p>
+
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="icon ion-person tx-16 lh-0 op-6"></i></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Username">
+              </div><!-- input-group -->
+            </div><!-- col-4 -->
+            <div class="col-lg-4 mg-t-20 mg-lg-t-0">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Recipient's username">
+                <div class="input-group-append">
+                  <span class="input-group-text">@domain.gov.ua</span>
+                </div>
+              </div><!-- input-group -->
+            </div><!-- col-4 -->
+            <div class="col-lg-4 mg-t-20 mg-lg-t-0">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                </div>
+                <input type="text" class="form-control">
+                <div class="input-group-append">
+                  <span class="input-group-text">.00</span>
+                </div>
+              </div><!-- input-group -->
+            </div><!-- col-sm-4 -->
+          </div><!-- row -->
+
+          <div class="row pd-t-20">
+            <div class="col-lg-4">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <label class="ckbox wd-16 mg-b-0">
+                      <input type="checkbox"><span></span>
+                    </label>
+                  </div>
+                </div>
+                <input type="text" class="form-control" placeholder="Text input with checkbox">
+              </div><!-- input-group -->
+            </div><!-- col-4 -->
+            <div class="col-lg-4 mg-t-20 mg-lg-t-0">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <label class="rdiobox wd-16 mg-b-0">
+                      <input type="radio"><span></span>
+                    </label>
+                  </div>
+                </div>
+                <input type="text" class="form-control" placeholder="Text input with radiobox">
+              </div><!-- input-group -->
+            </div><!-- col-4 -->
+            <div class="col-lg-4 mg-t-20 mg-lg-t-0">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button class="btn bd bd-l-0 bg-white tx-gray-600" type="button"><i class="fa fa-search"></i></button>
+                </span>
+              </div><!-- input-group -->
+            </div><!-- col-4 -->
+          </div><!-- row -->
+        </div><!-- section-wrapper -->
+
+        <div class="section-wrapper mg-t-20">
+          <label class="section-title">Input Mask</label>
+          <p class="mg-b-20 mg-sm-b-40">Input masks allows a user to more easily enter fixed width input where you would like them to enter the data in a certain format (dates,phones, etc).</p>
+
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+                  </div>
+                </div>
+                <input id="dateMask" type="text" class="form-control" placeholder="ДД/ММ/РРРР">
+              </div><!-- input-group -->
+            </div><!-- col-4 -->
+            <div class="col-lg-4 mg-t-20 mg-lg-t-0">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fa fa-phone tx-16 lh-0 op-6"></i>
+                  </div>
+                </div><!-- input-group-prepend -->
+                <input id="phoneMask" type="text" class="form-control" placeholder="(999) 99-99-999">
+              </div><!-- input-group -->
+            </div>
+            <div class="col-lg-4 mg-t-20 mg-lg-t-0">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fa fa-plus tx-16 lh-0 op-6"></i>
+                  </div><!-- input-group-text -->
+                </div><!-- input-group-prepend -->
+                <input id="ssnMask" type="text" class="form-control" placeholder="999-99-9999">
+              </div>
+            </div>
+          </div><!-- row -->
+        </div><!-- section-wrapper -->
+
+        <div class="section-wrapper mg-t-20">
+                  <label class="section-title">Input Tags</label>
+                  <p class="mg-b-20 mg-sm-b-40">User interface for managing tags.</p>
+
+                  <div class="bootstrap-tagsinput"><span class="tag label label-info">Amsterdam<span data-role="remove"></span></span> <span class="tag label label-info">Washington<span data-role="remove"></span></span> <span class="tag label label-info">Sydney<span data-role="remove"></span></span> <span class="tag label label-info">Beijing<span data-role="remove"></span></span> <span class="tag label label-info">Cairo<span data-role="remove"></span></span> <input type="text" placeholder=""></div><input type="text" value="Amsterdam,Washington,Sydney,Beijing,Cairo" data-role="tagsinput" style="display: none;">
+                </div> <!-- section-wrapper -->
+
+                <div class="section-wrapper mg-t-20">
+                  <label class="section-title">Time Picker</label>
+                  <p class="mg-b-20 mg-sm-b-40">Easily select a time for a text input using your mouse or keyboards arrow keys.</p>
+
+                  <label>Default Time Picker:</label>
+                  <div class="wd-150 mg-b-30">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <i class="fa fa-clock-o tx-16 lh-0 op-6"></i>
+                        </div>
+                      </div><!-- input-group-prepend -->
+                      <input id="tpBasic" type="text" class="form-control ui-timepicker-input" placeholder="Set time" autocomplete="off">
+                    </div>
+                  </div><!-- wd-150 -->
+
+                  <label>Set the scroll position to local time if no value selected:</label>
+                  <div class="wd-150 mg-b-30">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <i class="fa fa-clock-o tx-16 lh-0 op-6"></i>
+                        </div><!-- input-group-text -->
+                      </div><!-- input-group-prepend -->
+                      <input id="tp2" type="text" class="form-control ui-timepicker-input" placeholder="Set time" autocomplete="off">
+                    </div>
+                  </div><!-- wd-150 -->
+
+                  <label>Dynamically set the time using a Javascript Date object:</label>
+                  <div class="d-flex">
+                    <div class="input-group wd-150">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <i class="fa fa-clock-o tx-16 lh-0 op-6"></i>
+                        </div><!-- input-group-text -->
+                      </div><!-- input-group-prepend -->
+                      <input id="tp3" type="text" class="form-control ui-timepicker-input" placeholder="Set time" autocomplete="off">
+                    </div><!-- input-group -->
+                    <button id="setTimeButton" class="btn btn-primary mg-l-10">Set Current Time</button>
+                  </div>
+                </div> <!-- section-wrapper -->
+
+                <div class="section-wrapper mg-t-20">
+              <label class="section-title">Color Picker</label>
+              <p class="mg-b-20 mg-sm-b-40">A simple component to select color in the same way you select color in Adobe Photoshop.</p>
+
+              <input type="text" id="colorpicker" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(23, 162, 184);"></div></div><div class="sp-dd">▼</div></div>
+
+              <p class="mg-t-40 mg-b-10">You can allow alpha transparency selection. Check out these example.</p>
+              <input type="text" id="showAlpha" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgba(23, 162, 184, 0.5);"></div></div><div class="sp-dd">▼</div></div>
+
+              <p class="mg-t-40 mg-b-10">Show pallete only. If you'd like, spectrum can show the palettes you specify, and nothing else.</p>
+              <input type="text" id="showPaletteOnly" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(220, 53, 69);"></div></div><div class="sp-dd">▼</div></div>
+            </div> <!-- section-wrapper -->
+
+              </div>
+            </div><!-- gpdk-mainpanel -->
+
+<div class="gpdk-mainpanel">
+      <div class="container">
+        <div class="gpdk-pageheader">
+          <ol class="breadcrumb gpdk-breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Головна</a></li>
+            <li class="breadcrumb-item"><a href="#">Форми</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Alerts</li>
+          </ol>
+          <h6 class="gpdk-pagetitle">Alerts</h6>
+        </div><!-- gpdk-pageheader -->
+
+        <div class="section-wrapper">
+                  <label class="section-title">Basic Alerts</label>
+                  <p class="mg-b-20 mg-sm-b-40">Use one of the four required contextual classes</p>
+
+                  <div class="alert alert-success" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                    <strong>Well done!</strong> You successfully read this important alert message.
+                  </div><!-- alert -->
+
+                  <div class="alert alert-info" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                    <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+                  </div><!-- alert -->
+
+                  <div class="alert alert-warning" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                  </div><!-- alert -->
+
+                  <div class="alert alert-danger mg-b-0" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                    <strong>Oh snap!</strong> Change a few things up and try submitting again.
+                  </div><!-- alert -->
+
+                  <p class="section-label mg-t-20 mg-sm-t-40">Class Reference</p>
+                  <table class="table table-reference">
+                    <thead>
+                      <tr>
+                        <th class="wd-40p">Class</th>
+                        <th class="wd-60p">Values</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><code class="pd-0 bg-transparent">class="alert alert-[value]"</code></td>
+                        <td>success | info | warning | danger</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div><!-- section-wrapper -->
+
+                <div class="section-wrapper mg-t-20">
+                          <label class="section-title">Outline Alerts</label>
+                          <p class="mg-b-20 mg-sm-b-40">Use one of the four required contextual classes</p>
+
+                          <div class="alert alert-outline alert-success" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                              <span aria-hidden="true">×</span>
+                            </button>
+                            <strong>Well done!</strong> You successfully read this important alert message.
+                          </div><!-- alert -->
+
+                          <div class="alert alert-outline alert-info" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                              <span aria-hidden="true">×</span>
+                            </button>
+                            <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+                          </div><!-- alert -->
+
+                          <div class="alert alert-outline alert-warning" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                              <span aria-hidden="true">×</span>
+                            </button>
+                            <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                          </div><!-- alert -->
+
+                          <div class="alert alert-outline alert-danger mg-b-0" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                              <span aria-hidden="true">×</span>
+                            </button>
+                            <strong>Oh snap!</strong> Change a few things up and try submitting again.
+                          </div><!-- alert -->
+
+                          <p class="section-label mg-t-20 mg-sm-t-40">Class Reference</p>
+                          <table class="table table-reference">
+                            <thead>
+                              <tr>
+                                <th class="wd-40p">Class</th>
+                                <th class="wd-60p">Values</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><code class="pd-0 bg-transparent">class="alert alert-outline alert-[value]"</code></td>
+                                <td>success | info | warning | danger</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div><!-- section-wrapper -->
+
+                        <div class="section-wrapper mg-t-20">
+          <label class="section-title">Solid Color Alerts</label>
+          <p class="mg-b-20 mg-sm-b-40">Use one of the four required contextual classes</p>
+
+          <div class="alert alert-solid alert-success" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <strong>Well done!</strong> You successfully read this important alert message.
+          </div><!-- alert -->
+
+          <div class="alert alert-solid alert-info" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+          </div><!-- alert -->
+
+          <div class="alert alert-solid alert-warning" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <strong>Warning!</strong> Better check yourself, you're not looking too good.
+          </div><!-- alert -->
+
+          <div class="alert alert-solid alert-danger mg-b-0" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <strong>Oh snap!</strong> Change a few things up and try submitting again.
+          </div><!-- alert -->
+
+          <p class="section-label mg-t-20 mg-sm-t-40">Class Reference</p>
+          <table class="table table-reference">
+            <thead>
+              <tr>
+                <th class="wd-40p">Class</th>
+                <th class="wd-60p">Values</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code class="pd-0 bg-transparent">class="alert alert-solid alert-[value]"</code></td>
+                <td>success | info | warning | danger</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>  <!-- section-wrapper -->
+
+      </div>
     </div><!-- gpdk-mainpanel -->
+
+    <div class="gpdk-mainpanel">
+          <div class="container">
+            <div class="gpdk-pageheader">
+              <ol class="breadcrumb gpdk-breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Головна</a></li>
+                <li class="breadcrumb-item"><a href="#">Форми</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Buttons</li>
+              </ol>
+              <h6 class="gpdk-pagetitle">Buttons</h6>
+            </div><!-- gpdk-pageheader -->
+
+            <div class="section-wrapper">
+                      <label class="section-title">Default Buttons</label>
+                      <p class="mg-b-20 mg-sm-b-40">Predefined button styles, each serving its own semantic purpose.</p>
+
+                      <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                          <div class="btn-demo">
+                            <button class="btn btn-primary btn-block mg-b-10">Primary</button>
+                            <button class="btn btn-primary active btn-block mg-b-10">Active</button>
+                            <button class="btn btn-primary disabled btn-block mg-b-10">Disabled</button>
+                          </div><!-- btn-demo -->
+                        </div><!-- col-sm-3 -->
+
+                        <div class="col-sm-6 col-md-3 mg-t-20 mg-sm-t-0">
+                          <div class="btn-demo">
+                            <button class="btn btn-secondary btn-block mg-b-10">Secondary</button>
+                            <button class="btn btn-secondary active btn-block mg-b-10">Active</button>
+                            <button class="btn btn-secondary disabled btn-block mg-b-10">Disabled</button>
+                          </div><!-- btn-demo -->
+                        </div><!-- col-sm-3 -->
+                      </div><!-- row -->
+                    </div>  <!-- section-wrapper -->
+
+                    <div class="section-wrapper mg-t-20">
+          <label class="section-title">Button Sizes</label>
+          <p class="mg-b-20 mg-sm-b-40">A button with small and large size.</p>
+
+          <div class="row">
+            <div class="col-sm-6 col-md-3">
+              <div class="btn-demo">
+                <button class="btn btn-primary btn-sm btn-block mg-b-10">Small</button>
+              </div><!-- btn-demo -->
+            </div><!-- col-sm-3 -->
+            <div class="col-sm-6 col-md-3 mg-t-20 mg-sm-t-0">
+              <div class="btn-demo">
+                <button class="btn btn-secondary btn-sm btn-block mg-b-10">Small</button>
+              </div><!-- btn-demo -->
+            </div><!-- col-sm-3 -->
+          </div><!-- row -->
+
+          <div class="row mg-t-5">
+            <div class="col-sm-6 col-md-3">
+              <div class="btn-demo">
+                <button class="btn btn-primary btn-lg btn-block mg-b-10">Large</button>
+              </div><!-- btn-demo -->
+            </div><!-- col-sm-3 -->
+            <div class="col-sm-6 col-md-3 mg-t-20 mg-sm-t-0">
+              <div class="btn-demo">
+                <button class="btn btn-secondary btn-lg btn-block mg-b-10">Large</button>
+              </div><!-- btn-demo -->
+            </div><!-- col-sm-3 -->
+          </div><!-- row -->
+        </div><!-- section-wrapper -->
+
+        <div class="section-wrapper mg-t-20">
+                  <label class="section-title">Colored Buttons</label>
+                  <p class="mg-b-20 mg-sm-b-40">Predefined button styles, each serving its own semantic purpose.</p>
+
+                  <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                      <div class="btn-demo">
+                        <button class="btn btn-success btn-block mg-b-10">Success</button>
+                        <button class="btn btn-success active btn-block mg-b-10">Active</button>
+                        <button class="btn btn-success disabled btn-block mg-b-10">Disabled</button>
+                      </div><!-- btn-demo -->
+                    </div><!-- col-sm-3 -->
+
+                    <div class="col-sm-6 col-md-3 mg-t-20 mg-sm-t-0">
+                      <div class="btn-demo">
+                        <button class="btn btn-warning btn-block mg-b-10">Warning</button>
+                        <button class="btn btn-warning active btn-block mg-b-10">Active</button>
+                        <button class="btn btn-warning disabled btn-block mg-b-10">Disabled</button>
+                      </div><!-- btn-demo -->
+                    </div><!-- col-sm-3 -->
+
+                    <div class="col-sm-6 col-md-3 mg-t-20 mg-md-t-0">
+                      <div class="btn-demo">
+                        <button class="btn btn-danger btn-block mg-b-10">Danger</button>
+                        <button class="btn btn-danger active btn-block mg-b-10">Active</button>
+                        <button class="btn btn-danger disabled btn-block mg-b-10">Disabled</button>
+                      </div><!-- btn-demo -->
+                    </div><!-- col-sm-3 -->
+
+                    <div class="col-sm-6 col-md-3 mg-t-20 mg-md-t-0">
+                      <div class="btn-demo">
+                        <button class="btn btn-info btn-block mg-b-10">Info</button>
+                        <button class="btn btn-info active btn-block mg-b-10">Active</button>
+                        <button class="btn btn-info disabled btn-block mg-b-10">Disabled</button>
+                      </div><!-- btn-demo -->
+                    </div><!-- col-sm-3 -->
+                  </div><!-- row -->
+                </div><!-- section-wrapper -->
+
+                <div class="section-wrapper mg-t-20">
+          <label class="section-title">Additional Colored Buttons</label>
+          <p class="mg-b-20 mg-sm-b-40">Predefined button styles, each serving its own semantic purpose.</p>
+
+          <div class="row">
+            <div class="col-sm-6 col-md-3">
+              <div class="btn-demo">
+                <button class="btn btn-indigo btn-block mg-b-10">Indigo</button>
+                <button class="btn btn-indigo active btn-block mg-b-10">Active</button>
+                <button class="btn btn-indigo disabled btn-block mg-b-10">Disabled</button>
+              </div><!-- btn-demo -->
+            </div><!-- col-sm-3 -->
+
+            <div class="col-sm-6 col-md-3 mg-t-20 mg-sm-t-0">
+              <div class="btn-demo">
+                <button class="btn btn-purple btn-block mg-b-10">Purple</button>
+                <button class="btn btn-purple active btn-block mg-b-10">Active</button>
+                <button class="btn btn-purple disabled btn-block mg-b-10">Disabled</button>
+              </div><!-- btn-demo -->
+            </div><!-- col-sm-3 -->
+
+            <div class="col-sm-6 col-md-3 mg-t-20 mg-md-t-0">
+              <div class="btn-demo">
+                <button class="btn btn-teal btn-block mg-b-10">Teal</button>
+                <button class="btn btn-teal active btn-block mg-b-10">Active</button>
+                <button class="btn btn-teal disabled btn-block mg-b-10">Disabled</button>
+              </div><!-- btn-demo -->
+            </div><!-- col-sm-3 -->
+
+            <div class="col-sm-6 col-md-3 mg-t-20 mg-md-t-0">
+              <div class="btn-demo">
+                <button class="btn btn-pink btn-block mg-b-10">Pink</button>
+                <button class="btn btn-pink active btn-block mg-b-10">Active</button>
+                <button class="btn btn-pink disabled btn-block mg-b-10">Disabled</button>
+              </div><!-- btn-demo -->
+            </div><!-- col-sm-3 -->
+          </div><!-- row -->
+        </div><!-- section-wrapper -->
+
+        <div class="section-wrapper mg-t-20">
+                  <label class="section-title">Outline Buttons</label>
+                  <p class="mg-b-20 mg-sm-b-40">Predefined button styles, each serving its own semantic purpose.</p>
+
+                  <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                      <div class="btn-demo">
+                        <button class="btn btn-outline-primary btn-block mg-b-10">Primary</button>
+                        <button class="btn btn-outline-primary active btn-block mg-b-10">Active</button>
+                        <button class="btn btn-outline-primary disabled btn-block mg-b-10">Disabled</button>
+                      </div><!-- btn-demo -->
+                    </div><!-- col-sm-3 -->
+                    <div class="col-sm-6 col-md-3 mg-t-20 mg-sm-t-0">
+                      <div class="btn-demo">
+                        <button class="btn btn-outline-secondary btn-block mg-b-10">Secondary</button>
+                        <button class="btn btn-outline-secondary active btn-block mg-b-10">Active</button>
+                        <button class="btn btn-outline-secondary disabled btn-block mg-b-10">Disabled</button>
+                      </div><!-- btn-demo -->
+                    </div><!-- col-sm-3 -->
+                    <div class="col-sm-6 col-md-3 mg-t-20 mg-md-t-0">
+                      <div class="btn-demo">
+                        <button class="btn btn-outline-success btn-block mg-b-10">Secondary</button>
+                        <button class="btn btn-outline-success active btn-block mg-b-10">Active</button>
+                        <button class="btn btn-outline-success disabled btn-block mg-b-10">Disabled</button>
+                      </div><!-- btn-demo -->
+                    </div><!-- col-sm-3 -->
+                    <div class="col-sm-6 col-md-3 mg-t-20 mg-md-t-0">
+                      <div class="btn-demo">
+                        <button class="btn btn-outline-danger btn-block mg-b-10">Secondary</button>
+                        <button class="btn btn-outline-danger active btn-block mg-b-10">Active</button>
+                        <button class="btn btn-outline-danger disabled btn-block mg-b-10">Disabled</button>
+                      </div><!-- btn-demo -->
+                    </div><!-- col-sm-3 -->
+                  </div><!-- row -->
+
+                  <p class="section-label mg-t-20 mg-sm-t-40">Class Reference</p>
+                  <table class="table table-reference">
+                    <thead>
+                      <tr>
+                        <th class="wd-35p">Class</th>
+                        <th class="wd-65p">Values</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><code class="pd-0 bg-transparent">class="btn btn-outline-[value]"</code></td>
+                        <td>primary | success | info | warning | danger | indigo | turtle | teal | pink | orange</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div><!-- section-wrapper -->
+
+                <div class="section-wrapper mg-t-20">
+                          <label class="section-title">Rounded Buttons</label>
+                          <p class="mg-b-20 mg-sm-b-40">A very rounded corner for both basic and outline buttons.</p>
+
+                          <div class="row">
+                            <div class="col-sm-6 col-md-3">
+                              <div class="btn-demo">
+                                <button class="btn btn-oblong btn-primary btn-block mg-b-10">Primary</button>
+                                <button class="btn btn-oblong btn-outline-primary btn-block mg-b-10">Primary</button>
+                              </div><!-- btn-demo -->
+                            </div><!-- col-sm-3 -->
+
+                            <div class="col-sm-6 col-md-3 mg-t-20 mg-sm-t-0">
+                              <div class="btn-demo">
+                                <button class="btn btn-oblong btn-secondary btn-block mg-b-10">Secondary</button>
+                                <button class="btn btn-oblong btn-outline-secondary btn-block mg-b-10">Secondary</button>
+                              </div><!-- btn-demo -->
+                            </div><!-- col-sm-3 -->
+
+                            <div class="col-sm-6 col-md-3 mg-t-20 mg-md-t-0">
+                              <div class="btn-demo">
+                                <button class="btn btn-oblong btn-success btn-block mg-b-10">Success</button>
+                                <button class="btn btn-oblong btn-outline-success btn-block mg-b-10">Success</button>
+                              </div><!-- btn-demo -->
+                            </div><!-- col-sm-3 -->
+
+                            <div class="col-sm-6 col-md-3 mg-t-20 mg-md-t-0">
+                              <div class="btn-demo">
+                                <button class="btn btn-oblong btn-danger btn-block mg-b-10">Danger</button>
+                                <button class="btn btn-oblong btn-outline-danger btn-block">Danger</button>
+                              </div><!-- btn-demo -->
+                            </div><!-- col-sm-3 -->
+                          </div><!-- row -->
+
+                          <p class="section-label mg-t-20 mg-sm-t-40">Class Reference</p>
+                          <table class="table table-reference">
+                            <thead>
+                              <tr>
+                                <th class="wd-40p">Class</th>
+                                <th class="wd-60p">Values</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><code class="pd-0 bg-transparent">class="btn btn-oblong btn-[value]"</code></td>
+                                <td rowspan="2" class="valign-middle-force">primary | success | warning | danger | info | teal | indigo | purple | pink | light | dark</td>
+                              </tr>
+                              <tr>
+                                <td><code class="pd-0 bg-transparent">class="btn btn-oblong btn-outline-[value]"</code></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div><!-- section-wrapper -->
+
+
+                        <div class="section-wrapper mg-t-20">
+                      <label class="section-title">Button with Icons</label>
+                      <p class="mg-b-20 mg-sm-b-40">A basic button with added icons.</p>
+
+                      <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                          <div class="btn-demo">
+                            <button class="btn btn-primary btn-block mg-b-10"><i class="fa fa-file-text-o mg-r-5"></i> Compose</button>
+                            <button class="btn btn-outline-primary btn-block mg-b-10"><i class="fa fa-file-text-o mg-r-5"></i> Compose</button>
+                          </div><!-- btn-demo -->
+                        </div><!-- col-sm-3 -->
+
+                        <div class="col-sm-6 col-md-3 mg-t-20 mg-sm-t-0">
+                          <div class="btn-demo">
+                            <button class="btn btn-secondary btn-block mg-b-10"><i class="fa fa-paper-plane mg-r-5"></i> Send</button>
+                            <button class="btn btn-outline-secondary btn-block mg-b-10"><i class="fa fa-paper-plane mg-r-5"></i> Send</button>
+                          </div><!-- btn-demo -->
+                        </div><!-- col-sm-3 -->
+                      </div><!-- row -->
+                      <p class="mg-b-0 mg-t-10">For more icons to use, go to <a href="elem-icons.html">icons page</a> of this template.</p>
+                    </div><!-- section-wrapper -->
+
+                    <div class="section-wrapper mg-t-20">
+          <label class="section-title">Icon Buttons</label>
+          <p class="mg-b-20 mg-sm-b-40">A button variant for using only icons.</p>
+
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="demo-btn-list">
+                <a href="#" class="btn btn-primary btn-icon"><div><i class="fa fa-facebook"></i></div></a>
+                <a href="#" class="btn btn-info btn-icon"><div><i class="fa fa-twitter"></i></div></a>
+                <a href="#" class="btn btn-danger btn-icon"><div><i class="fa fa-google-plus"></i></div></a>
+                <a href="#" class="btn btn-dark btn-icon"><div><i class="fa fa-codepen"></i></div></a>
+                <a href="#" class="btn btn-warning btn-icon"><div><i class="fa fa-stack-overflow"></i></div></a>
+              </div><!-- demo-btn-list -->
+            </div><!-- col-5 -->
+            <div class="col-md-6 col-lg-4 mg-t-20 mg-md-t-0">
+              <div class="demo-btn-list">
+                <a href="#" class="btn btn-outline-primary btn-icon"><div><i class="fa fa-facebook"></i></div></a>
+                <a href="#" class="btn btn-outline-info btn-icon"><div><i class="fa fa-twitter"></i></div></a>
+                <a href="#" class="btn btn-outline-danger btn-icon"><div><i class="fa fa-google-plus"></i></div></a>
+                <a href="#" class="btn btn-outline-dark btn-icon"><div><i class="fa fa-codepen"></i></div></a>
+                <a href="#" class="btn btn-outline-warning btn-icon"><div><i class="fa fa-stack-overflow"></i></div></a>
+              </div><!-- demo-btn-list -->
+            </div><!-- col-5 -->
+          </div><!-- row -->
+
+          <div class="row mg-t-20">
+            <div class="col-md-6 col-lg-4">
+              <div class="demo-btn-list">
+                <a href="#" class="btn btn-primary btn-icon rounded-circle"><div><i class="fa fa-facebook"></i></div></a>
+                <a href="#" class="btn btn-info btn-icon rounded-circle"><div><i class="fa fa-twitter"></i></div></a>
+                <a href="#" class="btn btn-danger btn-icon rounded-circle"><div><i class="fa fa-google-plus"></i></div></a>
+                <a href="#" class="btn btn-dark btn-icon rounded-circle"><div><i class="fa fa-codepen"></i></div></a>
+                <a href="#" class="btn btn-warning btn-icon rounded-circle"><div><i class="fa fa-stack-overflow"></i></div></a>
+              </div><!-- demo-btn-list -->
+            </div><!-- col-5 -->
+            <div class="col-md-6 col-lg-4 mg-t-20 mg-lg-t-0">
+              <div class="demo-btn-list">
+                <a href="#" class="btn btn-outline-primary btn-icon rounded-circle"><div><i class="fa fa-facebook"></i></div></a>
+                <a href="#" class="btn btn-outline-info btn-icon rounded-circle"><div><i class="fa fa-twitter"></i></div></a>
+                <a href="#" class="btn btn-outline-danger btn-icon rounded-circle"><div><i class="fa fa-google-plus"></i></div></a>
+                <a href="#" class="btn btn-outline-dark btn-icon rounded-circle"><div><i class="fa fa-codepen"></i></div></a>
+                <a href="#" class="btn btn-outline-warning btn-icon rounded-circle"><div><i class="fa fa-stack-overflow"></i></div></a>
+              </div><!-- demo-btn-list -->
+            </div><!-- col-5 -->
+          </div><!-- row -->
+        </div><!-- section-wrapper -->
+
+        <div class="section-wrapper mg-t-20">
+          <label class="section-title">Dropdown Buttons</label>
+          <p class="mg-b-20 mg-sm-b-40">A button with added dropdown.</p>
+
+          <div class="d-sm-flex">
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown button
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div><!-- dropdown-menu -->
+            </div><!-- dropdown -->
+            <div class="dropdown mg-sm-l-10 mg-t-10 mg-sm-t-0">
+              <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown button
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div><!-- dropdown-menu -->
+            </div><!-- dropdown -->
+          </div><!-- d-flex -->
+        </div><!-- section-wrapper -->
+
+        <div class="section-wrapper mg-t-20">
+          <label class="section-title">Button Groups</label>
+          <p class="mg-b-20 mg-sm-b-40">Group a series of buttons together on a single line with the button group.</p>
+
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary pd-x-25 active">Left</button>
+                <button type="button" class="btn btn-secondary pd-x-25">Center</button>
+                <button type="button" class="btn btn-secondary pd-x-25">Right</button>
+              </div>
+            </div><!-- col-4 -->
+            <div class="col-lg-2 mg-t-20 mg-lg-t-0">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary active"><i class="fa fa-home"></i></button>
+                <button type="button" class="btn btn-secondary"><i class="fa fa-envelope"></i></button>
+                <button type="button" class="btn btn-secondary"><i class="fa fa-cog"></i></button>
+              </div>
+            </div><!-- col-2 -->
+            <div class="col-lg-4 mg-t-20 mg-lg-t-0">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-primary active"><i class="fa fa-play"></i></button>
+                <button type="button" class="btn btn-primary"><i class="fa fa-pause"></i></button>
+                <button type="button" class="btn btn-primary"><i class="fa fa-stop"></i></button>
+              </div>
+            </div><!-- col-4 -->
+          </div><!-- row -->
+        </div><!-- section-wrapper -->
+
+          </div>
+        </div><!-- gpdk-mainpanel -->
 
   <footer>
     <div class="container mt-footer">
