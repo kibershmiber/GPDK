@@ -2107,6 +2107,100 @@
         </div>
 
 
+<!-- scripts for Form elements -->
+
+<script src="../lib/jquery/js/jquery.js"></script>
+<script src="../lib/popper.js/js/popper.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.js"></script>
+<script src="../lib/jquery.cookie/js/jquery.cookie.js"></script>
+<script src="../lib/jquery-toggles/js/toggles.min.js"></script>
+<script src="../lib/jt.timepicker/js/jquery.timepicker.js"></script>
+<script src="../lib/spectrum/js/spectrum.js"></script>
+<script src="../lib/jquery.maskedinput/js/jquery.maskedinput.js"></script>
+<script src="../lib/bootstrap-tagsinput/js/bootstrap-tagsinput.js"></script>
+<script src="../js/slim.js"></script>
+<script>
+      $(function(){
+        'use strict'
+
+        // Toggles
+        $('.toggle').toggles({
+          on: true,
+          height: 26
+        });
+
+        // Input Masks
+        $('#dateMask').mask('99/99/9999');
+        $('#phoneMask').mask('(999) 999-9999');
+        $('#ssnMask').mask('999-99-9999');
+
+        // Time Picker
+        $('#tpBasic').timepicker();
+        $('#tp2').timepicker({'scrollDefault': 'now'});
+        $('#tp3').timepicker();
+
+        $('#setTimeButton').on('click', function (){
+          $('#tp3').timepicker('setTime', new Date());
+        });
+
+        // Color picker
+        $('#colorpicker').spectrum({
+          color: '#17A2B8'
+        });
+
+        $('#showAlpha').spectrum({
+          color: 'rgba(23,162,184,0.5)',
+          showAlpha: true
+        });
+
+        $('#showPaletteOnly').spectrum({
+            showPaletteOnly: true,
+            showPalette:true,
+            color: '#DC3545',
+            palette: [
+                ['#1D2939', '#fff', '#0866C6','#23BF08', '#F49917'],
+                ['#DC3545', '#17A2B8', '#6610F2', '#fa1e81', '#72e7a6']
+            ]
+        });
+
+      });
+    </script>
+
+<!-- scripts for Alerts -->
+
+    <script src="../lib/jquery/js/jquery.js"></script>
+    <script src="../lib/popper.js/js/popper.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../lib/jquery.cookie/js/jquery.cookie.js"></script>
+    <script src="../js/slim.js"></script>
+
+<!-- scripts for Buttons -->
+
+<script src="../lib/jquery/js/jquery.js"></script>
+<script src="../lib/popper.js/js/popper.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.js"></script>
+<script src="../lib/jquery.cookie/js/jquery.cookie.js"></script>
+<script src="../js/slim.js"></script>
+
+
+<!-- scripts for Widgets -->
+
+<script src="../lib/jquery/js/jquery.js"></script>
+<script src="../lib/popper.js/js/popper.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.js"></script>
+<script src="../lib/jquery.cookie/js/jquery.cookie.js"></script>
+<script src="../lib/moment/js/moment.js"></script>
+<script src="../lib/d3/js/d3.js"></script>
+<script src="../lib/rickshaw/js/rickshaw.min.js"></script>
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyAEt_DBLTknLexNbTVwbXyq2HSf2UbRBU8"></script>
+<script src="../lib/gmaps/js/gmaps.js"></script>
+<script src="../lib/peity/js/jquery.peity.js"></script>
+<script src="../js/slim.js"></script>
+<script src="../js/ResizeSensor.js"></script>
+<script src="../js/widgets.js"></script>
+
+
+
   <footer>
     <div class="container mt-footer">
 
